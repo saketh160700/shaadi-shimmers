@@ -11,28 +11,56 @@ export function InvitationLetter() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 flex items-center justify-center p-8 md:p-20">
-          <div className="text-center text-[#3a1a0a] max-w-md md:max-w-lg space-y-3 md:space-y-5">
-            <div className="text-2xl md:text-3xl">॥ श्री गणेशाय नमः ॥</div>
-            <div className="divider-ornate text-[#8b6f1a]">✦</div>
-            <p className="font-display text-base md:text-lg italic">
-              With the blessings of our families,<br />we joyfully invite you to celebrate
-            </p>
-            <h3 className="font-script text-4xl md:text-6xl text-[#7a1a1a] leading-none">
-              Aarav <span className="text-2xl md:text-3xl">weds</span> Priya
+        <div className="absolute inset-0 flex items-center justify-center p-6 md:p-16 overflow-y-auto">
+          <div className="text-center text-[#3a1a0a] max-w-md md:max-w-xl space-y-2 md:space-y-3">
+            <div className="flex justify-between text-sm md:text-base font-display text-[#7a1a1a] italic px-2">
+              <span>Srirasthu</span>
+              <span>Subhamasthu</span>
+              <span>Avighnamasthu</span>
+            </div>
+            <div className="text-xl md:text-2xl">॥ श्री गणेशाय नमः ॥</div>
+            <h3 className="font-script text-3xl md:text-5xl text-[#7a1a1a] leading-none">
+              Wedding Invitation
             </h3>
+            <div className="divider-ornate text-[#8b6f1a]">✦</div>
+            <p className="font-display text-sm md:text-base italic">
+              We solicit your gracious presence with family &amp; friends<br />
+              on the auspicious occasion of the marriage<br />
+              of our only daughter
+            </p>
+            <h4 className="font-script text-3xl md:text-5xl text-[#7a1a1a] leading-tight">
+              Chi.La.Sou. Vani Priyadarshini
+            </h4>
+            <p className="font-display text-base md:text-lg italic">with</p>
+            <h4 className="font-script text-3xl md:text-5xl text-[#7a1a1a] leading-tight">
+              Chi. Sai Kumar
+            </h4>
+            <p className="text-xs md:text-sm italic">
+              (Only S/o. Smt. &amp; Sri Jella Jayalakshmi – Jitesh)
+            </p>
             <div className="divider-ornate text-[#8b6f1a]">❀</div>
             <div className="space-y-1 font-display">
-              <p className="text-lg md:text-xl tracking-wider">Tuesday, 15<sup>th</sup> December 2026</p>
-              <p className="text-base md:text-lg">Muhurat — 7:00 PM onwards</p>
-              <p className="text-sm md:text-base mt-3 italic">
-                The Royal Heritage Palace<br />
-                Udaipur, Rajasthan
-              </p>
+              <p className="text-sm md:text-base font-semibold tracking-wider">Sumuhurtham</p>
+              <p className="text-base md:text-lg">Saturday, 09<sup>th</sup> May 2026 · 08:15 a.m.</p>
+              <p className="text-xs md:text-sm italic">"Mithuna Lagnam"</p>
             </div>
             <div className="divider-ornate text-[#8b6f1a]">✦</div>
-            <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-[#7a1a1a]">
-              Your presence is our blessing
+            <div className="space-y-1 font-display">
+              <p className="text-sm md:text-base font-semibold">Venue</p>
+              <p className="text-sm md:text-base italic">
+                M.N.T. Varahi Banquets<br />
+                Anand Nagar, Bandlaguda, Nagole,<br />
+                Hyderabad
+              </p>
+            </div>
+            <div className="divider-ornate text-[#8b6f1a]">❀</div>
+            <p className="text-xs md:text-sm font-display">Lunch follows.</p>
+            <div className="pt-2 font-script text-xl md:text-2xl text-[#7a1a1a]">
+              Smt. Dontha Varalakshmi<br />
+              Sri Dontha Satyanarayana
+            </div>
+            <p className="text-[10px] md:text-xs italic mt-2">
+              With best compliments from Near &amp; Dear
             </p>
           </div>
         </div>
