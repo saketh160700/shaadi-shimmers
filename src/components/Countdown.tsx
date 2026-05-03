@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TARGET = new Date("2026-12-15T19:00:00").getTime();
+const TARGET = new Date("2026-05-09T08:15:00").getTime();
 
 function calc() {
   const diff = Math.max(0, TARGET - Date.now());
@@ -13,8 +13,11 @@ function calc() {
 }
 
 export function Countdown() {
-  const [t, setT] = useState(calc());
+  const [mounted, setMounted] = useState(false);
+  const [t, setT] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   useEffect(() => {
+    setMounted(true);
+    setT(calc());
     const i = setInterval(() => setT(calc()), 1000);
     return () => clearInterval(i);
   }, []);
@@ -32,7 +35,7 @@ export function Countdown() {
           className="ornate-border bg-card/80 backdrop-blur px-2 py-4 md:py-6 text-center shadow-gold"
         >
           <div className="text-3xl md:text-5xl font-display text-gold-shimmer font-bold tabular-nums">
-            {String(it.value).padStart(2, "0")}
+            {mounted ? String(it.value).padStart(2, "0") : "--"}
           </div>
           <div className="mt-1 text-xs md:text-sm uppercase tracking-widest text-muted-foreground">
             {it.label}
