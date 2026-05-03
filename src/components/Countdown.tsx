@@ -1,0 +1,44 @@
+import { useEffect, useState } from "react";
+
+const TARGET = new Date("2026-12-15T19:00:00").getTime();
+
+function calc() {
+  const diff = Math.max(0, TARGET - Date.now());
+  return {
+    days: Math.floor(diff / 86400000),
+    hours: Math.floor((diff / 3600000) % 24),
+    minutes: Math.floor((diff / 60000) % 60),
+    seconds: Math.floor((diff / 1000) % 60),
+  };
+}
+
+export function Countdown() {
+  const [t, setT] = useState(calc());
+  useEffect(() => {
+    const i = setInterval(() => setT(calc()), 1000);
+    return () => clearInterval(i);
+  }, []);
+  const items = [
+    { label: "Days", value: t.days },
+    { label: "Hours", value: t.hours },
+    { label: "Minutes", value: t.minutes },
+    { label: "Seconds", value: t.seconds },
+  ];
+  return (
+    <div className="grid grid-cols-4 gap-3 md:gap-6">
+      {items.map((it) => (
+        <div
+          key={it.label}
+          className="ornate-border bg-card/80 backdrop-blur px-2 py-4 md:py-6 text-center shadow-gold"
+        >
+          <div className="text-3xl md:text-5xl font-display text-gold-shimmer font-bold tabular-nums">
+            {String(it.value).padStart(2, "0")}
+          </div>
+          <div className="mt-1 text-xs md:text-sm uppercase tracking-widest text-muted-foreground">
+            {it.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
