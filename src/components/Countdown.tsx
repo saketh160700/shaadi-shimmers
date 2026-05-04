@@ -32,7 +32,7 @@ export function Countdown() {
       {items.map((it) => (
         <div
           key={it.label}
-          className="ornate-border bg-card/80 backdrop-blur px-2 py-4 md:py-6 text-center shadow-gold"
+          className="ornate-border bg-card/95 px-2 py-4 text-center shadow-sm md:py-6"
         >
           <div className="text-3xl md:text-5xl font-display text-gold-shimmer font-bold tabular-nums">
             {mounted ? String(it.value).padStart(2, "0") : "--"}

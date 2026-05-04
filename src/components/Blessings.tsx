@@ -47,7 +47,7 @@ export function Blessings() {
 
   return (
     <div className="grid gap-10 md:grid-cols-2">
-      <form onSubmit={submit} className="ornate-border bg-card/90 backdrop-blur p-6 md:p-8 space-y-4 shadow-gold">
+      <form onSubmit={submit} className="ornate-border space-y-4 bg-card/95 p-6 md:p-8 shadow-sm">
         <div className="text-center">
           <Sparkles className="mx-auto h-8 w-8 text-accent" />
           <h3 className="mt-2 text-2xl md:text-3xl text-primary">Send Your Blessings</h3>

@@ -100,6 +100,15 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.75rem;
+  }
+  @media (min-width: 640px) {
+    html {
+      scroll-padding-top: 3.5rem;
+    }
+  }
   * { border-color: var(--color-border); }
   body {
     background-color: var(--color-background);
@@ -110,6 +119,11 @@
       radial-gradient(circle at 80% 90%, oklch(0.42 0.16 25 / 0.08), transparent 50%);
   }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.02em; }
+  /* Script headlines (global h1 rule would otherwise override Tailwind font-script) */
+  .hero-script-name {
+    font-family: var(--font-script);
+    letter-spacing: 0.03em;
+  }
 }
 
 /* ===== Animations ===== */
@@ -160,22 +174,25 @@
 .shadow-royal { box-shadow: var(--shadow-royal); }
 .shadow-gold { box-shadow: var(--shadow-gold); }
 
-/* Decorative ornamental border */
+/* Refined frame — double gold line, soft shadow (no corner icons) */
 .ornate-border {
   position: relative;
-  border: 2px solid var(--gold);
-  border-radius: 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid oklch(0.78 0.14 75 / 0.45);
+  box-shadow:
+    0 0 0 1px oklch(0.42 0.16 25 / 0.2),
+    0 10px 40px -12px oklch(0.36 0.15 25 / 0.18);
 }
-.ornate-border::before, .ornate-border::after {
-  content: "❋";
-  position: absolute;
-  font-size: 1.5rem;
-  color: var(--gold);
-  background: var(--background);
-  padding: 0 0.5rem;
+
+/* Full-bleed photo: show entire image, letterboxed if needed */
+.photo-frame-fit {
+  border-radius: 0.375rem;
+  border: 1px solid oklch(0.78 0.14 75 / 0.45);
+  box-shadow:
+    0 0 0 1px oklch(0.42 0.16 25 / 0.18),
+    0 12px 36px -10px oklch(0.36 0.15 25 / 0.2);
+  background: linear-gradient(180deg, oklch(0.94 0.04 80) 0%, oklch(0.9 0.05 75) 100%);
 }
-.ornate-border::before { top: -0.9rem; left: 50%; transform: translateX(-50%); }
-.ornate-border::after { bottom: -0.9rem; left: 50%; transform: translateX(-50%); }
 
 .divider-ornate {
   display: flex; align-items: center; justify-content: center; gap: 1rem;
