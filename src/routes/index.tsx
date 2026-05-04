@@ -341,19 +341,19 @@ function Index() {
               loading="lazy"
             />
           </div>
-          <div className="ornate-border col-span-2 overflow-hidden shadow-gold md:col-span-2">
+          <div className="photo-frame-fit col-span-2 overflow-hidden shadow-gold md:col-span-2 flex items-center justify-center">
             <img
               src={bride}
               alt="The bride"
-              className="h-44 w-full object-cover object-[center_25%] md:h-48"
+              className="w-full h-auto max-h-[70vh] object-contain"
               loading="lazy"
             />
           </div>
-          <div className="ornate-border col-span-2 overflow-hidden shadow-gold md:col-span-2">
+          <div className="photo-frame-fit col-span-2 overflow-hidden shadow-gold md:col-span-2 flex items-center justify-center">
             <img
               src={groom}
               alt="The groom"
-              className="h-44 w-full object-cover object-top md:h-48"
+              className="w-full h-auto max-h-[70vh] object-contain"
               loading="lazy"
             />
           </div>
