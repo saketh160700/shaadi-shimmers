@@ -485,18 +485,6 @@ function Index() {
             </div>
           </div>
 
-          <div className="mt-12 overflow-hidden rounded-2xl border border-accent/25 shadow-[0_20px_50px_rgba(0,0,0,0.45)]">
-            <iframe
-              src={MAPS_EMBED_URL}
-              title="MNT Varahi Banquets location"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-72 w-full md:h-96"
-              style={{ border: 0 }}
-              allowFullScreen
-            />
-          </div>
-
           <div className="mt-14 flex flex-col items-center gap-2 border-t border-white/10 pt-8 text-center">
             <p className="text-xs uppercase tracking-[0.45em] text-secondary/50">Vani Priyadarshini &amp; Sai Kumar</p>
             <p className="text-[11px] text-secondary/40">Thank you for being part of our story.</p>
