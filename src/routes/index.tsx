@@ -19,7 +19,7 @@ import { TraditionalWeddingHeader } from "@/components/TraditionalWeddingHeader"
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { Blessings } from "@/components/Blessings";
 import { MapPin, Calendar, Music, Utensils, Flower2, Navigation, ExternalLink, Heart } from "lucide-react";
-import { VENUE_NAME, VENUE_LINES, MAPS_PLACE_URL } from "@/components/InvitationLetter";
+import { VENUE_NAME, VENUE_LINES, MAPS_PLACE_URL, MAPS_EMBED_URL } from "@/components/InvitationLetter";
 
 export const Route = createFileRoute("/")({
   head: () => ({
