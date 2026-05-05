@@ -19,7 +19,7 @@ import { TraditionalWeddingHeader } from "@/components/TraditionalWeddingHeader"
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { Blessings } from "@/components/Blessings";
 import { MapPin, Calendar, Music, Utensils, Flower2, Navigation, ExternalLink, Heart } from "lucide-react";
-import { VENUE_NAME, VENUE_LINES, MAPS_PLACE_URL, MAPS_EMBED_URL } from "@/components/InvitationLetter";
+import { VENUE_NAME, VENUE_LINES, MAPS_PLACE_URL } from "@/components/InvitationLetter";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -483,18 +483,6 @@ function Index() {
                 With love · Hyderabad
               </p>
             </div>
-          </div>
-
-          <div className="mt-12 overflow-hidden rounded-2xl border border-accent/25 shadow-[0_20px_50px_rgba(0,0,0,0.45)]">
-            <iframe
-              src={MAPS_EMBED_URL}
-              title="MNT Varahi Banquets location"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-72 w-full md:h-96"
-              style={{ border: 0 }}
-              allowFullScreen
-            />
           </div>
 
           <div className="mt-14 flex flex-col items-center gap-2 border-t border-white/10 pt-8 text-center">
