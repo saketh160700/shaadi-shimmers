@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
+import { Button } from "@/components/ui/button";
 import coupleBw from "@/assets/couple-bw.jpeg";
 import ganesha from "@/assets/ganesha.png";
 import bride from "@/assets/bride.jpeg";
