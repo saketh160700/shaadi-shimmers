@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
+import { Button } from "@/components/ui/button";
 import coupleBw from "@/assets/couple-bw.jpeg";
 import ganesha from "@/assets/ganesha.png";
 import bride from "@/assets/bride.jpeg";
@@ -357,6 +358,17 @@ function Index() {
               loading="lazy"
             />
           </div>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <Button asChild size="lg" className="font-display">
+            <a
+              href="https://drive.google.com/drive/folders/1rXtUF-s6n2EWIu5HbEMrRncMFSG5B9L5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Gallery
+            </a>
+          </Button>
         </div>
       </Section>
 
