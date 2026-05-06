@@ -358,6 +358,17 @@ function Index() {
             />
           </div>
         </div>
+        <div className="mt-10 flex justify-center">
+          <Button asChild size="lg" className="font-display">
+            <a
+              href="https://drive.google.com/drive/folders/1rXtUF-s6n2EWIu5HbEMrRncMFSG5B9L5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Gallery
+            </a>
+          </Button>
+        </div>
       </Section>
 
       {/* EVENTS */}
